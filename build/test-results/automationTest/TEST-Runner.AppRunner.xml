@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Runner.AppRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-04T16:49:42" hostname="DESKTOP-KCCH660" time="52.04">
+  <properties/>
+  <testcase name="runScenario[0](&quot;login with valid credentials&quot;, &quot;Optional[eribank login]&quot;)" classname="Runner.AppRunner" time="52.04"/>
+  <system-out><![CDATA[
+Scenario Outline: login with valid credentials # src/test/resources/Features/AppLogin.feature:12
+  Given User in the login page                 # StepDefinition.AppAutomation.EeiBankLoginStepdefs.userInTheLoginPage()
+  And User fill 'company' and 'company'        # StepDefinition.AppAutomation.EeiBankLoginStepdefs.userFillUserNameAndPassword(java.lang.String,java.lang.String)
+  And press '<login>'                          # StepDefinition.AppAutomation.EeiBankLoginStepdefs.pressLogin(java.lang.String)
+Manotosh
+  Then user will be logged in                  # StepDefinition.AppAutomation.EeiBankLoginStepdefs.userWillBeLoggedIn()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

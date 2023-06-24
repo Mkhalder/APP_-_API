@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Runner.APiRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-06-04T16:49:37" hostname="DESKTOP-KCCH660" time="5.694">
+  <properties/>
+  <testcase name="runScenario[0](&quot;get api check of pages&quot;, &quot;Optional[Get Api Response]&quot;)" classname="Runner.APiRunner" time="4.775"/>
+  <testcase name="runScenario[1](&quot;check register registration successful or not&quot;, &quot;Optional[Register Registration]&quot;)" classname="Runner.APiRunner" time="0.914"/>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: get api check of pages # src/test/resources/Features/EmpRegGetAPI.feature:11
+  Given user has the base api            # StepDefinition.EmpRegGetAPiStepdefs.userHasTheBaseApi()
+https://reqres.in/api/users?page=2
+Control here in api call
+http://localhosthttps://reqres.in/api/users?page=2
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  When user call the '?page' and '2'     # StepDefinition.EmpRegGetAPiStepdefs.userCallTheParameterAndParamsValue(java.lang.String,java.lang.String)
+Michael
+  Then it will return valid data         # StepDefinition.EmpRegGetAPiStepdefs.itWillReturnValidData()
+
+@smoke
+Scenario Outline: check register registration successful or not # src/test/resources/Features/EmpRegPostAPi.feature:11
+  Given register has the api  'register'                        # StepDefinition.EmpRegPostAPiStepdefs.registerHasTheApiPath(java.lang.String)
+  When register hit 'eve.holt@reqres.in' and '123456'           # StepDefinition.EmpRegPostAPiStepdefs.registerHitEmailAndPassword(java.lang.String,java.lang.String)
+https://reqres.in/api/register
+{Content-Type=application/json;charset=UTF-8}
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+  And call the api with body                                    # StepDefinition.EmpRegPostAPiStepdefs.callTheApiWithBody()
+4
+QpwL5tke4Pnpja7X4
+  Then it will return token                                     # StepDefinition.EmpRegPostAPiStepdefs.itWillReturnToken()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

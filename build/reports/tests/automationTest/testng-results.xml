@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Gradle suite" duration-ms="59012" started-at="2023-06-04T22:49:36 BDT" finished-at="2023-06-04T22:50:35 BDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.APiRunner@393671df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.AppRunner@56620197]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Gradle test" duration-ms="59012" started-at="2023-06-04T22:49:36 BDT" finished-at="2023-06-04T22:50:35 BDT">
+      <class name="Runner.APiRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.APiRunner@393671df]" name="setUpClass" is-config="true" duration-ms="916" started-at="2023-06-04T22:49:36 BDT" finished-at="2023-06-04T22:49:37 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.APiRunner@393671df]" name="runScenario" duration-ms="4775" started-at="2023-06-04T22:49:37 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-04T22:49:41 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["get api check of pages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Get Api Response]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.APiRunner@393671df]" name="runScenario" duration-ms="914" started-at="2023-06-04T22:49:41 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-04T22:49:42 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check register registration successful or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Register Registration]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.APiRunner@393671df]" name="tearDownClass" is-config="true" duration-ms="119" started-at="2023-06-04T22:49:42 BDT" finished-at="2023-06-04T22:49:42 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.APiRunner -->
+      <class name="Runner.AppRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.AppRunner@56620197]" name="setUpClass" is-config="true" duration-ms="21" started-at="2023-06-04T22:49:42 BDT" finished-at="2023-06-04T22:49:42 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.AppRunner@56620197]" name="runScenario" duration-ms="52040" started-at="2023-06-04T22:49:42 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-04T22:50:34 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[eribank login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.AppRunner@56620197]" name="tearDownClass" is-config="true" duration-ms="168" started-at="2023-06-04T22:50:34 BDT" finished-at="2023-06-04T22:50:35 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.AppRunner -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>
